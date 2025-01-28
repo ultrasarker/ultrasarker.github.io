@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultra's Ultimate Site</title>
+    <title>Ultra's Ultimate Website</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
       * {
@@ -24,7 +24,7 @@
 
       .hero {
         height: 60vh;
-        background-image: url('/api/placeholder/1920/1080');  /* Replace with your Processor image */
+        background-image: url('/images/background.png');
         background-size: cover;
         background-position: center;
         position: relative;
@@ -63,18 +63,22 @@
         text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
       }
 
-      .privacy-link {
+      .legal-links {
         margin-top: 1rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
       }
 
-      .privacy-link a {
+      .legal-links a {
         color: #fff;
         text-decoration: none;
         border-bottom: 1px dotted rgba(255, 0, 255, 0.7);
         text-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
+        transition: all 0.3s ease;
       }
 
-      .privacy-link a:hover {
+      .legal-links a:hover {
         color: #ff00ff;
         border-bottom-color: #ff00ff;
       }
@@ -143,10 +147,11 @@
   <body>
     <div class="hero">
       <header>
-        <h1>This is Ultra's Site</h1>
-        <p>Ahead of Advance</p>
-        <div class="privacy-link">
+        <h1>Processor</h1>
+        <p>Easy Moderation and Fun</p>
+        <div class="legal-links">
           <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
         </div>
       </header>
     </div>
